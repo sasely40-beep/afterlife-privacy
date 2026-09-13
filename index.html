@@ -11,6 +11,270 @@
 
     <p>Last updated: September 13, 2026</p>
 
+    # Privacy Policy — Afterlife
+
+**Last updated:** 13 September 2026
+
+**Effective date:** *13 September 2026*
+
+---
+
+**Controller:** `HASAN BALKI`
+
+**Contact for privacy enquiries:** `supportafterlifeapp@gmail.com`
+
+---
+
+## 1. Summary
+
+Afterlife ("the App") records, transcribes, and helps you study sermons. It is built so that the things you create — recordings, transcripts, notes, highlights, bookmarks, saved moments, search queries, and the scripture you read — **stay on your device**.
+
+We do not operate an account system. We never ask you to sign in, and we do not know who you are.
+
+The App does use the network for four narrowly defined purposes, described in full in Section 4: downloading the on-device speech model, Apple's own speech assets, processing your App Store purchase, and anonymous usage statistics that you can switch off at any time.
+
+**We do not sell personal data. We do not share it with data brokers. We do not track you across other companies' apps or websites, and the App contains no advertising identifier and no advertising SDK.**
+
+---
+
+## 2. Who this policy applies to
+
+This policy applies to everyone who uses the App on iOS or iPadOS. It does not cover the App Store itself, which is operated by Apple under Apple's own privacy policy.
+
+---
+
+## 3. What stays on your device
+
+The following is created by you and is stored **only** in the App's local storage on your device. It is not transmitted to us, and we have no ability to access, read, or recover it:
+
+* Sermon audio recordings and imported audio files
+* Transcripts, including live and corrected transcripts
+* Your notes, highlights, bookmarks, and saved moments
+* Playlists, memory cards, and review history
+* Search queries and their results
+* Which scripture passages you open, mark, or annotate
+* Speaker and sermon metadata you enter or that is derived on your device
+* Your settings, including language, appearance, reminder, and voice preferences
+
+Recording, transcription, summarisation, indexing, search, and scripture analysis are all performed **on your device**. Transcription uses Apple's on-device speech recognition. Read-aloud uses a neural speech model that runs on your device.
+
+iCloud and CloudKit synchronisation are disabled in the App. Your library is not backed up to any server we control. It is included in your own iPhone or iCloud device backup if you have one enabled, which is governed by Apple's privacy policy rather than this one.
+
+Because this data never leaves your device, **deleting the App deletes it permanently**. We cannot restore it. Section 9 explains how to export it first.
+
+---
+
+## 4. When the App uses the network, and what is sent
+
+### 4.1 Downloading the on-device speech model
+
+The first time the App prepares read-aloud, it downloads a neural text-to-speech model from **Hugging Face** (`huggingface.co`), which hosts the model files. This is an ordinary file download. The request carries only what any file download carries — your IP address and standard connection metadata, handled by Hugging Face under its own privacy policy.
+
+**No sermon, transcript, note, or scripture content is sent.**
+
+Once the model is installed, read-aloud runs entirely offline.
+
+### 4.2 Apple speech assets
+
+Apple's speech recognition and system voices may download language assets through iOS. These requests are made by the operating system, not by the App, and are governed by Apple's privacy policy.
+
+### 4.3 Purchases
+
+Premium subscriptions are sold through Apple's In-App Purchase. Payment is handled entirely by Apple; we never see your payment details.
+
+We use **RevenueCat, Inc.** to verify and manage subscription entitlements.
+
+RevenueCat receives an anonymous, randomly generated application user identifier together with the transaction and entitlement data Apple returns — which product was purchased, whether it is active, and when it renews or expires.
+
+This identifier is not linked to your name, e-mail address, or any account, because the App has none. This processing is necessary to provide the paid features and to make "Restore Purchases" work on a second device.
+
+RevenueCat acts as our processor. Its privacy policy is available at:
+
+`https://www.revenuecat.com/privacy`
+
+### 4.4 Anonymous usage statistics and crash reports
+
+The App uses **Google Firebase Analytics** and **Firebase Crashlytics**, provided by Google LLC, to understand how the App is used and to find defects.
+
+**What is collected:**
+
+* Which screens are opened, and in what order
+* Which features are used — for example that a recording was started, that read-aloud was used, that a search was run, that the subscription screen was opened or dismissed
+* The outcome of operations — whether a purchase succeeded, whether processing completed, whether the speech model installed
+* Coarse magnitudes expressed as **ranges, never exact values**. A recording is reported as "between 15 and 30 minutes", not as its true length. A library is reported as "between 6 and 20 sermons", not as its true size. A search is reported as "2–5 results", not as its result count.
+* Non-identifying characteristics of the installation: whether the subscription is active, which read-aloud engine is selected, the appearance setting, and the library-size range
+* Standard information collected automatically by Firebase: a randomly generated application instance identifier, the vendor identifier for your device (IDFV), device model, operating system version, App version, language, and an approximate country or region derived from your IP address
+* Crash and error reports: the crash stack, device state at the time, and a short internal error code that identifies which operation failed
+
+**What is never collected:**
+
+The set of events the App is technically capable of reporting is fixed in its source code, and none of those events is able to carry free text. Every reported value is a number, a true/false flag, or one of a fixed list of developer-defined labels.
+
+As a direct consequence, the following **cannot** be transmitted, even by mistake:
+
+* Sermon audio, transcripts, or any part of them
+* Sermon titles, speaker names, or pastor names
+* Your notes, highlights, or annotations
+* Your search queries
+* Which book, chapter, or verse of scripture you are reading
+* File names of anything you import
+* Your name, e-mail address, phone number, or contacts
+* Your precise location
+
+**What we do not do:**
+
+* We do not use the Advertising Identifier (IDFA), and the App never presents the App Tracking Transparency prompt.
+* Google Signals, ad personalisation, ad storage, and ad-conversion measurement are explicitly **disabled**.
+* We do not set a user ID. Your installation is anonymous to us.
+* We do not combine this data with data from other companies' apps or websites, and therefore do not "track" you as Apple and applicable law define that term.
+
+**Your control.** Usage statistics are **on by default** and can be turned off at any time in **Settings › Privacy › Usage statistics**.
+
+Turning the setting off stops collection immediately and instructs Firebase to delete the data already associated with your installation. Crash reports remain enabled so that defects can still be diagnosed; they carry a stable error code and technical device state, and never your content.
+
+Google acts as our processor for this data. Google's privacy policy is available at:
+
+`https://policies.google.com/privacy`
+
+Firebase's data practices are described at:
+
+`https://firebase.google.com/support/privacy`
+
+---
+
+## 5. Device permissions
+
+| Permission             | Why the App asks                                                                           | What happens if you refuse                                   |
+| ---------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Microphone**         | To record sermons. Audio is written to local storage on your device.                       | Recording is unavailable. Importing audio files still works. |
+| **Speech Recognition** | To transcribe recorded audio using Apple's on-device recogniser.                           | Transcription is unavailable. Audio still records and plays. |
+| **Notifications**      | To send the weekday reminders you enable, which are composed and scheduled on your device. | No reminders are sent. Nothing else changes.                 |
+
+Every permission can be changed at any time in the iOS **Settings** app.
+
+Notification content is generated locally; reminder text is never sent to a server.
+
+---
+
+## 6. Legal bases for processing (EEA, United Kingdom, and Switzerland)
+
+Where the EU or UK General Data Protection Regulation applies, we rely on the following legal bases:
+
+| Purpose                                           | Legal basis                                                                                                                                                                                                            |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Providing the App's core features                 | Performance of a contract — Article 6(1)(b)                                                                                                                                                                            |
+| Verifying and restoring subscription entitlements | Performance of a contract — Article 6(1)(b)                                                                                                                                                                            |
+| Downloading the on-device speech model            | Performance of a contract — Article 6(1)(b)                                                                                                                                                                            |
+| Anonymous usage statistics                        | Legitimate interests — Article 6(1)(f): understanding which features are used so the App can be improved. You may object at any time using the in-App switch described in Section 4.4, which takes effect immediately. |
+| Crash and error reporting                         | Legitimate interests — Article 6(1)(f): identifying and fixing defects that affect the stability of the App                                                                                                            |
+
+We have assessed our legitimate interests against your rights and freedoms. The assessment is materially assisted by the fact that the data is anonymous, bucketed rather than exact, incapable of carrying your content, and subject to a one-tap opt-out.
+
+---
+
+## 7. International transfers
+
+Google and RevenueCat process data on infrastructure that may be located outside your country, including in the United States.
+
+Where data is transferred out of the EEA, the United Kingdom, or Switzerland, those transfers are made under the European Commission's Standard Contractual Clauses (and the UK International Data Transfer Addendum where applicable), which both providers incorporate into their terms.
+
+---
+
+## 8. Retention
+
+| Data                              | Retained                                                                                                                           |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Everything you create (Section 3) | On your device, until you delete it or delete the App. We hold no copy.                                                            |
+| Usage statistics                  | Retained by Firebase for a maximum of 14 months, then deleted automatically. Deleted sooner if you turn the setting off.           |
+| Crash reports                     | Retained by Crashlytics for up to 90 days.                                                                                         |
+| Subscription entitlement records  | Retained by RevenueCat for as long as needed to honour the entitlement and to meet Apple's and our tax and accounting obligations. |
+
+---
+
+## 9. Your rights and how to exercise them
+
+Because the App holds no account and no server-side copy of your library, most rights are exercised directly in the App rather than by writing to us:
+
+* **Access and portability.** **Settings › Privacy › Export** produces a complete package of your library that you can save or send anywhere.
+* **Erasure.** **Settings › Privacy › Delete all data** permanently removes every sermon, transcript, note, mark, and derived index from your device. Deleting the App has the same effect.
+* **Objection to usage statistics.** **Settings › Privacy › Usage statistics** stops collection and deletes what has already been collected.
+
+Depending on where you live, you may also have the right to rectification, to restriction of processing, to withdraw consent, and to lodge a complaint with your supervisory authority.
+
+Residents of California and other US states with comprehensive privacy laws have the right to know, delete, correct, and opt out of sale or sharing.
+
+**We do not sell or share personal information as those terms are defined in the California Consumer Privacy Act**, and we do not use personal information for cross-context behavioural advertising.
+
+To exercise a right that is not available in the App, write to:
+
+`supportafterlifeapp@gmail.com`
+
+Please note that because our analytics data is anonymous and carries no identifier we can tie to you, we are generally unable to locate a specific person's records within it; where that is the case, Article 11 GDPR applies and the in-App opt-out is the effective remedy.
+
+---
+
+## 10. Children
+
+The App is not directed to children under 13 (or under 16 where local law sets that age). We do not knowingly collect personal data from children.
+
+If you believe a child has provided us with personal data, contact `supportafterlifeapp@gmail.com` and we will act on it.
+
+---
+
+## 11. Security
+
+Your content is protected by iOS application sandboxing and by the device encryption iOS applies when a passcode is set. Network requests use TLS.
+
+We hold no server-side copy of your library, which materially limits the consequences of any compromise of our systems: there is no library of user content for an attacker to reach.
+
+No method of storage or transmission is perfectly secure, and we cannot guarantee absolute security.
+
+---
+
+## 12. Third-party processors
+
+| Processor             | Purpose                                                                           | Privacy policy                                |
+| --------------------- | --------------------------------------------------------------------------------- | --------------------------------------------- |
+| Apple Inc.            | App distribution, In-App Purchase, on-device speech recognition and system voices | `https://www.apple.com/legal/privacy/`        |
+| Google LLC (Firebase) | Anonymous usage statistics and crash reporting                                    | `https://firebase.google.com/support/privacy` |
+| RevenueCat, Inc.      | Subscription entitlement management                                               | `https://www.revenuecat.com/privacy`          |
+| Hugging Face, Inc.    | Hosting of the downloadable on-device speech model                                | `https://huggingface.co/privacy`              |
+
+---
+
+## 13. Changes to this policy
+
+If we change how the App handles data, we will update this policy and revise the "Last updated" date.
+
+Where a change materially affects your rights, we will give notice inside the App before it takes effect.
+
+---
+
+## 14. Contact
+
+`HASAN BALKI`
+
+`supportafterlifeapp@gmail.com`
+
+---
+
+### Appendix A — App Store "App Privacy" declaration
+
+The following corresponds to the App's privacy manifest and should be entered in App Store Connect exactly as set out here.
+
+| Data type             | Purpose           | Linked to you | Used for tracking |
+| --------------------- | ----------------- | ------------- | ----------------- |
+| Device ID (IDFV)      | Analytics         | No            | No                |
+| Product Interaction   | Analytics         | No            | No                |
+| Crash Data            | Analytics         | No            | No                |
+| Performance Data      | Analytics         | No            | No                |
+| Other Diagnostic Data | Analytics         | No            | No                |
+| Purchase History      | App Functionality | No            | No                |
+
+No other category is collected.
+
+In particular the App collects no Contact Info, no Health & Fitness data, no Financial Info, no Location, no Contacts, no User Content, no Search History, no Browsing History, and no Identifiers other than the vendor identifier described above.
+
   </main>
 </body>
 </html>
