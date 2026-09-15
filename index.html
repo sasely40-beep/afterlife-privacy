@@ -210,12 +210,12 @@
       <div class="meta">
         <div>
           <strong>Last updated:</strong>
-          13 September 2026
+          15 September 2026
         </div>
 
         <div>
           <strong>Effective date:</strong>
-          13 September 2026
+          15 September 2026
         </div>
 
         <div>
@@ -517,21 +517,24 @@
 
       <p>
         <strong>Your control.</strong>
-        Usage statistics can be turned off at any time in
-        <strong>Settings › Privacy › Usage statistics</strong>.
+        Usage statistics and crash diagnostics are optional and are disabled
+        by default. You can choose to enable them in
+        <strong>Settings › Privacy › Usage statistics</strong>, and you can
+        turn them off again at any time.
       </p>
 
       <p>
-        Turning this setting off stops future Firebase Analytics collection
-        by the App on that device. Previously collected Analytics data
-        remains subject to Google's applicable retention and deletion
-        controls.
+        When enabled, the App may send usage statistics through Firebase
+        Analytics and diagnostic reports through Firebase Crashlytics as
+        described above.
       </p>
 
       <p>
-        Crash reporting remains enabled so that application defects can
-        be diagnosed. Crash reports may include technical information
-        about the application and device state at the time of a failure.
+        Turning this setting off stops future Firebase Analytics and
+        Crashlytics collection on that device and resets the local Firebase
+        Analytics identifier for this installation. Data already transmitted
+        before you turned the setting off is not automatically deleted and
+        remains subject to Google's applicable retention and deletion controls.
       </p>
 
       <p>
@@ -664,30 +667,25 @@
             <tr>
               <td>Usage statistics</td>
               <td>
-                Legitimate interests — Article 6(1)(f): understanding
-                how the App is used so that we can maintain and improve it.
-                You can disable usage statistics using the in-App control
-                described in Section 4.4.
+                Consent — Article 6(1)(a): usage statistics are collected
+                only if you choose to enable them. You can withdraw your
+                consent at any time in Settings › Privacy.
               </td>
             </tr>
 
             <tr>
               <td>Crash and error reporting</td>
               <td>
-                Legitimate interests — Article 6(1)(f): identifying,
-                diagnosing, and fixing defects affecting the stability
-                of the App.
+                Consent — Article 6(1)(a): crash and diagnostic reports are
+                collected only if you choose to enable usage statistics and
+                diagnostics. You can withdraw your consent at any time in
+                Settings › Privacy.
               </td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <p>
-        In relying on legitimate interests, we seek to limit the data
-        collected and avoid including sermon content or other user-entered
-        free text in our custom Analytics events.
-      </p>
     </section>
 
     <section>
@@ -789,10 +787,10 @@
         </li>
 
         <li>
-          <strong>Objection to usage statistics.</strong>
+          <strong>Control over usage statistics and diagnostics.</strong>
           <strong>Settings › Privacy › Usage statistics</strong>
-          stops future Firebase Analytics collection by the App on
-          that device.
+          lets you enable or disable future Firebase Analytics and
+          Crashlytics collection on that device.
         </li>
       </ul>
 
